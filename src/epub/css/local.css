@@ -27,7 +27,12 @@ p span.i2{
 	text-indent: -1em;
 }
 
-/* outdent on last line of this verse */
+/* left margin and outdent on last line of this verse */
+#chapter-11 blockquote:nth-of-type(9) p{
+	text-align: initial;
+	text-indent: 0;
+}
+
 #chapter-11 blockquote:nth-of-type(9) span:last-child{
 	text-align: initial;
 	text-indent: -2.25em;
@@ -49,6 +54,10 @@ p span.i2{
 /* begin poster */
 #chapter-7 blockquote{
 	text-align: center;
+	text-indent: 0;
+}
+
+#chapter-7 blockquote p{
 	text-indent: 0;
 }
 
@@ -96,6 +105,10 @@ p span.floatr{
 	text-indent: 0;
 }
 
+#chapter-9 blockquote p{
+	text-indent: 0;
+}
+
 #chapter-9 blockquote strong{
 	font-variant: normal;
 	text-transform: uppercase;
@@ -105,6 +118,10 @@ p span.floatr{
 /* begin banners/proclamations/signs */
 #chapter-11 blockquote{
 	text-align: center;
+	text-indent: 0;
+}
+
+#chapter-11 blockquote p{
 	text-indent: 0;
 }
 
@@ -154,8 +171,14 @@ footer{
 /* end letter */
 
 /* begin telegram */
-#chapter-11 blockquote:nth-of-type(16){
+#chapter-11 blockquote:nth-of-type(16) p:first-child{
 	text-align: initial;
+	text-indent: 0;
+}
+
+#chapter-11 blockquote:nth-of-type(16) p:last-child{
+	text-align: right;
+	text-indent: 0;
 }
 
 .telegram{

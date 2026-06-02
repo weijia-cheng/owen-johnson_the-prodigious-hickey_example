@@ -1,6 +1,15 @@
 @charset "utf-8";
 @namespace epub "http://www.idpf.org/2007/ops";
 
+/* begin non-ToC section header */
+#chapter-1 header{
+	font-size: 1.17em;
+	font-variant: small-caps;
+	font-weight: 700;
+	margin-top: 2em;
+}
+/* end non-ToC section header */
+
 /* begin verse */
 [epub|type~="z3998:verse"] p{
 	text-align: initial;

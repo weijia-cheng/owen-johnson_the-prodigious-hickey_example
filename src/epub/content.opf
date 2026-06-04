@@ -8,6 +8,7 @@
 		<dc:publisher id="publisher">Standard Ebooks</dc:publisher>
 		<meta property="file-as" refines="#publisher">Standard Ebooks</meta>
 		<meta property="se:url.homepage" refines="#publisher">https://standardebooks.org/</meta>
+		<meta property="role" refines="#publisher" scheme="marc:relators">ann</meta>
 		<meta property="role" refines="#publisher" scheme="marc:relators">bkd</meta>
 		<meta property="role" refines="#publisher" scheme="marc:relators">mdc</meta>
 		<meta property="role" refines="#publisher" scheme="marc:relators">pbl</meta>
@@ -29,32 +30,45 @@
 		<meta property="schema:accessibilitySummary">This publication conforms to WCAG 2.2 Level AA.</meta>
 		<dc:title id="title">The Prodigious Hickey</dc:title>
 		<meta property="file-as" refines="#title">Prodigious Hickey, The</meta>
+		<meta property="title-type" refines="#title">main</meta>
+		<dc:title id="subtitle">A Lawrenceville Story</dc:title>
+		<meta property="file-as" refines="#subtitle">Lawrenceville Story, A</meta>
+		<meta property="title-type" refines="#subtitle">subtitle</meta>
+		<dc:title id="fulltitle">The Prodigious Hickey: A Lawrenceville Story</dc:title>
+		<meta property="file-as" refines="#fulltitle">Prodigious Hickey, The</meta>
+		<meta property="title-type" refines="#fulltitle">extended</meta>
+		<meta property="dcterms:alternative" refines="#title">The Eternal Boy</meta>
 		<dc:subject id="subject-1">Preparatory schools -- Fiction</dc:subject>
 		<meta property="authority" refines="#subject-1">LCHS</meta>
 		<meta property="term" refines="#subject-1">sh2008110237</meta>
-		<meta property="se:subject">TAG</meta>
-		<dc:description id="description">DESCRIPTION</dc:description>
+		<meta property="se:subject">Children’s</meta>
+		<meta property="se:subject">Fiction</meta>
+		<meta id="collection-1" property="belongs-to-collection">The Lawrenceville Stories</meta>
+		<meta property="collection-type" refines="#collection-1">series</meta>
+		<meta property="group-position" refines="#collection-1">1</meta>
+		<dc:description id="description">A boy at prep school feels he has been unjustly wronged by faculty and becomes the lead prankster in his quest for vengence.</dc:description>
 		<meta id="long-description" property="se:long-description" refines="#description">
-			LONG_DESCRIPTION
+			&lt;p&gt;Hickey’s adventures commence at Lawrenceville college-prep school with a classroom accusation he views as unjust, leaving him feeling vengeful toward the tyranny of the faculty. Subsequent events are told as a series of short stories where Hickey as a burgeoning con man grows adept at organizing the other boys for pranks which gradually evolve to riot. As the hijinks unfold, the thoughts of other boys reveal they are willing or reluctant to join in the fun or battle, depending on perspective.&lt;/p&gt;
+			&lt;p&gt;&lt;a href="https://standardebooks.org/ebooks/owen-johnson"&gt;Owen Johnson&lt;/a&gt; attended Lawrenceville school. The Prodigious Hickey (1910) is a reissue of The Eternal Boy (1909), and is No. 1 in the &lt;a href="https://standardebooks.org/collections/the-lawrenceville-stories"&gt;Lawrenceville Stories&lt;/a&gt; series.&lt;/p&gt;
 		</meta>
 		<dc:language>en-GB</dc:language>
 		<dc:source>https://www.gutenberg.org/ebooks/46892</dc:source>
-		<dc:source>PAGE_SCANS_URL</dc:source>
-		<meta property="se:production-notes">PRODUCTION_NOTES</meta>
+		<dc:source>https://archive.org/details/prodigioushickey00johnrich</dc:source>
 		<meta property="se:word-count">WORD_COUNT</meta>
 		<meta property="se:reading-ease.flesch">READING_EASE</meta>
-		<meta property="se:url.encyclopedia.wikipedia">https://en.wikipedia.org/wiki/The_Prodigious_Hickey</meta>
 		<meta property="se:url.vcs.github">https://github.com/standardebooks/owen-johnson_the-prodigious-hickey</meta>
 		<dc:creator id="author">Owen Johnson</dc:creator>
 		<meta property="file-as" refines="#author">Johnson, Owen</meta>
-		<meta property="se:name.person.full-name" refines="#author">CONTRIBUTOR_FULL_NAME</meta>
-		<meta property="se:url.encyclopedia.wikipedia" refines="#author">https://en.wikipedia.org/wiki/Owen_Johnson</meta>
-		<meta property="se:url.authority.nacoaf" refines="#author">CONTRIBUTOR_NACOAF_URI</meta>
+		<meta property="se:name.person.full-name" refines="#author">Owen McMahon Johnson</meta>
+		<meta property="se:url.encyclopedia.wikipedia" refines="#author">https://en.wikipedia.org/wiki/Owen_Johnson_(writer)</meta>
+		<meta property="se:url.authority.nacoaf" refines="#author">http://id.loc.gov/authorities/names/n85255033</meta>
+		<meta property="role" refines="#author" scheme="marc:relators">ann</meta>
 		<meta property="role" refines="#author" scheme="marc:relators">aut</meta>
-		<dc:contributor id="artist">COVER_ARTIST_NAME</dc:contributor>
-		<meta property="file-as" refines="#artist">COVER_ARTIST_SORT</meta>
-		<meta property="se:url.encyclopedia.wikipedia" refines="#artist">COVER_ARTIST_WIKI_URL</meta>
-		<meta property="se:url.authority.nacoaf" refines="#artist">COVER_ARTIST_NACOAF_URI</meta>
+		<dc:contributor id="artist">George Bellows</dc:contributor>
+		<meta property="file-as" refines="#artist">Bellows, George</meta>
+		<meta property="se:name.person.full-name" refines="#artist">George Wesley Bellows</meta>
+		<meta property="se:url.encyclopedia.wikipedia" refines="#artist">https://en.wikipedia.org/wiki/George_Bellows</meta>
+		<meta property="se:url.authority.nacoaf" refines="#artist">http://id.loc.gov/authorities/names/n50007142</meta>
 		<meta property="role" refines="#artist" scheme="marc:relators">art</meta>
 		<dc:contributor id="transcriber-1">David Edwards</dc:contributor>
 		<meta property="file-as" refines="#transcriber-1">Edwards, David</meta>
@@ -66,9 +80,8 @@
 		<meta property="file-as" refines="#transcriber-3">Distributed Proofreaders</meta>
 		<meta property="se:url.homepage" refines="#transcriber-3">https://www.pgdp.net/</meta>
 		<meta property="role" refines="#transcriber-3" scheme="marc:relators">trc</meta>
-		<dc:contributor id="producer-1">PRODUCER_NAME</dc:contributor>
-		<meta property="file-as" refines="#producer-1">PRODUCER_SORT</meta>
-		<meta property="se:url.homepage" refines="#producer-1">PRODUCER_URL</meta>
+		<dc:contributor id="producer-1">Anonymous</dc:contributor>
+		<meta property="file-as" refines="#producer-1">Anonymous</meta>
 		<meta property="role" refines="#producer-1" scheme="marc:relators">bkp</meta>
 		<meta property="role" refines="#producer-1" scheme="marc:relators">blw</meta>
 		<meta property="role" refines="#producer-1" scheme="marc:relators">cov</meta>

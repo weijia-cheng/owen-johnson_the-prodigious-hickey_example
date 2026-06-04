@@ -86,13 +86,13 @@ p span.i2{
 p span.floatl{
 	display: inline-block;
 	float: left;
-	margin-left: 3em;
+	margin-left: 2%;
 }
 
 p span.floatr{
 	display: inline-block;
 	float: right;
-	margin-right: 3em;
+	margin-right: 2%;
 }
 
 #chapter-7 blockquote p:nth-of-type(6){

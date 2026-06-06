@@ -1,14 +1,10 @@
 @charset "utf-8";
 @namespace epub "http://www.idpf.org/2007/ops";
 
-/* begin non-ToC section header */
-#chapter-1 header{
-	font-size: 1.17em;
-	font-variant: small-caps;
-	font-weight: 700;
-	margin-top: 2em;
+blockquote header p{
+	margin: 1em;
+	text-align: center;
 }
-/* end non-ToC section header */
 
 /* begin verse */
 [epub|type~="z3998:verse"] p{
@@ -36,125 +32,107 @@ p span.i2{
 	text-indent: -1em;
 }
 
-/* left margin and outdent on last line of this verse */
-#chapter-11 blockquote:nth-of-type(9) p{
-	text-align: initial;
-	text-indent: 0;
-}
-
-#chapter-11 blockquote:nth-of-type(9) span:last-child{
-	text-align: initial;
-	text-indent: -2.25em;
+p span.i6{
+	padding-left: 7em;
+	text-indent: -1em;
 }
 /* end verse */
 
 /* begin names written on the board */
-#chapter-4 blockquote strong{
+#chapter-4 blockquote:nth-of-type(2),
+#chapter-4 blockquote:nth-of-type(3),
+#chapter-4 blockquote:nth-of-type(4) {
 	font-style: italic;
 	font-variant: normal;
 	text-transform: uppercase;
-}
-
-#chapter-4 blockquote{
 	text-align: center;
 }
 /* end names written on the board */
 
 /* begin poster */
-#chapter-7 blockquote{
+#chapter-7 blockquote header p{
+	text-transform: uppercase;
+}
+
+#chapter-7 blockquote > p:nth-of-type(1),
+#chapter-7 blockquote > p:nth-of-type(2),
+#chapter-7 blockquote > p:nth-of-type(7),
+#chapter-7 blockquote > p:nth-of-type(10){
 	text-align: center;
 	text-indent: 0;
 }
 
-#chapter-7 blockquote p{
+#chapter-7 blockquote > p:nth-of-type(6),
+#chapter-7 blockquote > p:nth-of-type(8),
+#chapter-7 blockquote > p:nth-of-type(9){
 	text-indent: 0;
 }
 
-#chapter-7 blockquote p:nth-of-type(2){
+#chapter-7 blockquote > p:nth-of-type(3),
+#chapter-7 blockquote > p:nth-of-type(6),
+#chapter-7 blockquote > p:nth-of-type(8),
+#chapter-7 blockquote > p:nth-of-type(9){
 	margin-top: 1em;
 }
 
-#chapter-7 blockquote p:nth-of-type(4){
-	margin-top: 1em;
-}
-
-#chapter-7 blockquote strong{
-	font-variant: normal;
-	text-transform: uppercase;
+#chapter-7 blockquote > p:nth-of-type(7),
+#chapter-7 blockquote > p:nth-of-type(10){
+	margin-top: 2em;
 }
 
 p span.floatl{
 	display: inline-block;
 	float: left;
-	margin-left: 2%;
 }
 
 p span.floatr{
 	display: inline-block;
 	float: right;
-	margin-right: 2%;
-}
-
-#chapter-7 blockquote p:nth-of-type(6){
-	margin-bottom: 1em;
-}
-
-#chapter-7 blockquote p:nth-of-type(8){
-	margin-top: 2.5em;
-}
-
-#chapter-7 blockquote p:nth-of-type(11){
-	margin-top: 1em;
 }
 /* end poster */
 
 /* begin bulletin board ad */
-#chapter-9 blockquote:nth-of-type(5){
-	text-align: center;
-	text-indent: 0;
-}
-
-#chapter-9 blockquote p{
-	text-indent: 0;
-}
-
-#chapter-9 blockquote p + p{
-	margin-top: 1em;
-}
-
-#chapter-9 blockquote strong{
-	font-variant: normal;
+#chapter-9 blockquote header p:nth-of-type(1){
+	margin-bottom: 0;
 	text-transform: uppercase;
+}
+
+#chapter-9 blockquote header p:nth-of-type(2){
+	font-variant: small-caps;
+	margin-top: 0;
 }
 /* end bulletin board ad */
 
 /* begin banners/proclamations/signs */
 #chapter-11 blockquote{
 	text-align: center;
-	text-indent: 0;
 }
 
-#chapter-11 blockquote p{
-	text-indent: 0;
-}
-
-#chapter-11 blockquote strong{
-	font-variant: normal;
+#chapter-11 blockquote header p{
 	text-transform: uppercase;
 }
 
-#chapter-11 blockquote p:nth-of-type(2){
-	margin-top: 1em;
+#chapter-11 blockquote:nth-of-type(1) p,
+#chapter-11 blockquote:nth-of-type(2) p,
+#chapter-11 blockquote:nth-of-type(9) p{
+	text-indent: 0;
 }
 
-#chapter-11 blockquote p:nth-of-type(4){
+#chapter-11 blockquote:nth-of-type(8) > p:nth-of-type(1),
+#chapter-11 blockquote:nth-of-type(8) > p:nth-of-type(2),
+#chapter-11 blockquote:nth-of-type(9) > p:nth-of-type(2){
+	text-align: initial;
+}
+
+#chapter-11 blockquote:nth-of-type(8) > p:nth-of-type(3),
+#chapter-11 blockquote:nth-of-type(9) > p:nth-of-type(2){
 	margin-top: 1em;
 }
 
 /* extra big and bold word in this banner */
-#chapter-11 blockquote:nth-of-type(15) span{
-	font-size: 1.17em;
-	font-weight: 700;
+#chapter-11 blockquote:nth-of-type(16) strong{
+	font-size: larger;
+	font-weight: bold;
 	text-transform: uppercase;
 }
 /* end banners */
@@ -183,18 +161,6 @@ footer{
 }
 /* end letter */
 
-/* begin telegram */
-#chapter-11 blockquote:nth-of-type(16) p:first-child{
-	text-align: initial;
-	text-indent: 0;
-}
-
-#chapter-11 blockquote:nth-of-type(16) p:last-child{
-	text-align: right;
-	text-indent: 0;
-}
-
 .telegram{
 	font-variant: all-small-caps;
 }
-/* end telegram */
